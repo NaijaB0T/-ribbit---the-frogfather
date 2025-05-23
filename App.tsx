@@ -18,10 +18,10 @@ import { NavItem } from './types';
 
 const navItems: NavItem[] = [
   { name: "Home", href: "#hero" },
+  { name: "Community", href: "#community-dashboard" },
   { name: "Story", href: "#token-story" },
   { name: "Tokenomics", href: "#tokenomics" },
   { name: "Roadmap", href: "#roadmap" },
-  { name: "Community", href: "#community-dashboard" },
   { name: "Mission", href: "#mission" },
 ];
 
@@ -31,6 +31,7 @@ const App: React.FC = () => {
       <Header navItems={navItems} />
       <main className="flex-grow">
         <Hero />
+        <CommunityDashboard />
         <WhyItWorks />
         <TokenStory />
         <RiseOfMafia />
@@ -40,7 +41,6 @@ const App: React.FC = () => {
         <VisualsBranding />
         <Tokenomics />
         <Roadmap />
-        <CommunityDashboard />
         <Disclaimer />
       </main>
       <Footer />
